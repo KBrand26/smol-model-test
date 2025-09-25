@@ -18,19 +18,19 @@ No extra Python deps required. Use the system Python (3.13+) or create a venv.
 Interactive chat:
 
 ```bash
-python main.py
+uv run main.py
 ```
 
 One-shot prompt:
 
 ```bash
-python main.py -p "Explain what SmolLM2 is in 2 sentences."
+uv run main.py -p "Explain what SmolLM2 is in 2 sentences."
 ```
 
 Specify a different model or options:
 
 ```bash
-python main.py \
+uv run main.py \
   --model smollm2:1.7b \
   --system "You are a concise assistant." \
   --temperature 0.3 \
